@@ -1,0 +1,12 @@
+version: '3'
+services:
+    frontend-service:
+        image: demo-frontend:version-1
+        build: ../frontend
+        ports:
+            - "80:80"
+    backend-service:
+        image: demo-backend:version-1
+        build: ../backend
+        ports:
+            - "8080:8080"
